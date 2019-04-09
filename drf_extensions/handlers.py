@@ -11,7 +11,7 @@ from rest_framework.settings import api_settings
 from rest_framework.views import exception_handler as _exception_handler
 
 
-error_codes = getattr(api_settings, "ERROR_CODES", {})
+error_codes = getattr(settings, "ERROR_CODES", {})
 
 
 def flat(d):
