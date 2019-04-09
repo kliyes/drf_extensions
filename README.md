@@ -1,9 +1,9 @@
-# drf_extension
+# drf_extensions
 
 drf_extension是一个用于扩展及优化[django-rest-framework](https://www.django-rest-framework.org)功能的应用
 
 ## 安装步骤
-1. ```pip install git+https://github.com/kliyes/drf_extension@master```
+1. ```pip install git+https://github.com/kliyes/drf_extensions@master```
 
 2. `INSTALLED_APPS`配置：
 
@@ -12,7 +12,7 @@ drf_extension是一个用于扩展及优化[django-rest-framework](https://www.d
        'django.contrib.admin',
        ...
        'rest_framework',
-       'drf_extension'
+       'drf_extensions'
    ]
    ```
 
