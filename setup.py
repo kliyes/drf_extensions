@@ -19,7 +19,8 @@ setup(
     author='Jing Yang',
     author_email='tom@kliyes.com',
     install_requires=[
-        'djangorestframework'
+        'djangorestframework',
+        "python-dateutil"
     ],
     classifiers=[
         'Environment :: Web Environment',
