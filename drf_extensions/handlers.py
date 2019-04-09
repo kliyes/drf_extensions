@@ -13,7 +13,7 @@ from rest_framework.views import exception_handler as _exception_handler
 from .codes import ERROR_CODES
 
 
-error_codes = ERROR_CODES.update(getattr(settings, "ERROR_CODES", {}))
+ERROR_CODES.update(getattr(settings, "ERROR_CODES", {}))
 
 
 def flat(d):
@@ -55,7 +55,7 @@ def exception_handler(exc, context):
             return Response(
                 {
                     "field": error_field,
-                    "code": error_codes.get("internal_server_error"),
+                    "code": ERROR_CODES.get("internal_server_error"),
                     "message": _("Internal Server Error"),
                     "data": None
                 },
@@ -78,7 +78,7 @@ def exception_handler(exc, context):
             break
         data = {
             "field": error_field,
-            "code": error_codes.get(error_code, error_codes.get("common")),
+            "code": ERROR_CODES.get(error_code, ERROR_CODES.get("common")),
             "message": error_message,
             "data": None
         }
