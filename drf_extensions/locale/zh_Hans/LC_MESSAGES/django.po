@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-12 17:47+0800\n"
+"POT-Creation-Date: 2019-04-13 15:42+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,10 +18,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: handlers.py:56
+#: handlers.py:59
 msgid "Internal Server Error"
 msgstr "服务器内部错误"
 
-#: handlers.py:66
+#: handlers.py:69
 msgid "Validation Error"
 msgstr "参数错误"
