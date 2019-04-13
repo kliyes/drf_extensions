@@ -1,6 +1,7 @@
 import datetime
 
 from django.conf import settings
+from django.utils import timezone
 
 from rest_framework.authtoken.models import Token
 
