@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-13 15:42+0800\n"
+"POT-Creation-Date: 2019-04-13 16:04+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#: authentication.py:21
+#, python-format
+msgid ""
+"Add keyword `%s` before token key, or include it into GET/POST query "
+"parameter"
+msgstr "在令牌值前加上`%s`关键字，或者将令牌值放入GET或POST请求参数中"
+
+#: authentication.py:30
+msgid "Login expired"
+msgstr "登录已过期"
 
 #: handlers.py:59
 msgid "Internal Server Error"
