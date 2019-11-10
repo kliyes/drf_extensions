@@ -32,7 +32,7 @@ class SerializedPKRelatedField(PrimaryKeyRelatedField):
         return False
 
     def to_representation(self, value):
-        return self.serializer_class(value).data
+        return self.serializer_class(value, context=self.context).data
 
 
 class TZDateTimeField(DateTimeField):
