@@ -14,6 +14,7 @@ from .codes import ERROR_CODES
 
 
 ERROR_CODES.update(getattr(settings, "ERROR_CODES", {}))
+logger = getLogger("error_file")
 
 
 def flat(d):
@@ -51,6 +52,7 @@ def exception_handler(exc, context):
 
     error_field = None
     if response is None:  # should be 500 server error
+        logger.exception(exc)
         if not settings.DEBUG:
             return Response(
                 {
