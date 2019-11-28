@@ -1,4 +1,4 @@
-import logging
+from logging import getLogger
 
 from django.conf import settings
 from django.core.exceptions import PermissionDenied
