@@ -15,7 +15,7 @@ class ExpirationTokenAuthentication(TokenAuthentication):
         auth = super(ExpirationTokenAuthentication, self).authenticate(request)
         if auth is None:
             keyword = self.keyword.lower()
-            token = request.GET.get(keyword) or request.POST.get(keyword)
+            token = request.query_params.get(keyword) or request.data.get(keyword)
             if not token:
                 raise AuthenticationFailed(_(
                     "Add keyword `%s` before token key, "
